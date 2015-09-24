@@ -1,0 +1,96 @@
+首先安装SSH Server:
+
+打开Ubuntu Server终端，输入如下代码：
+
+sudo apt-get install openssh-server
+
+生成RSA Key(请su到普通用户来执行此命令):
+
+ssh-keygen -t rsa
+
+修改配置文件/etc/ssh/sshd_config：
+
+Port 22 # 修改成你想要的登陆端口,如2222
+
+PermitRootLogin no # 禁止root用户登陆
+
+StrictModes yes # 检查密钥的用户和权限是否正确，默认打开的
+
+RSAAuthentication yes # 启用 RSA 认证
+
+PubkeyAuthentication yes # 启用公钥认证
+
+PasswordAuthentication no # 禁止密码认证，默认是打开的
+
+ServerKeyBits 1024 # 修改后变为此状态，将ServerKey强度改为1024比特
+
+PermitEmptyPasswords no # 修改后变为此状态，禁止空密码进行登录
+
+将id_rsa文件拷贝到Client端的~/.ssh/目录下，将id_rsa.pub拷贝到Server端的~/.ssh/目录下，改名为authorized_keys，重启SSH服务：
+
+sudo /etc/init.d/ssh restart
+
+安装Git软件：
+
+sudo apt-get install git-core
+
+安装Gitosis：
+
+mkdir ~/src
+
+cd ~/src
+
+git clone git://eagain.net/gitosis
+
+cd gitosis
+
+sudo python setup.py install
+
+增加git用户：
+
+sudo adduser –system –shell /bin/sh  –gecos ‘git version control’ –group –disabled-password –home /home/git git
+
+初始化git目录，USER指在当前服务器的用户：
+
+sudo -H -u git gitosis-init < /home/USER/.ssh/authorized_keys
+sudo chmod 755 /home/git/repositories/gitosis-admin.git/hooks/post-update
+
+在Client端执行：
+
+git clone git@YOUR_SERVER:gitosis-admin.git
+
+cd gitosis-admin
+
+在gitosis.conf配置文件中增加：
+
+[group myapp]
+members = vince@urbanpuddle
+writable = myapp
+
+然后提交：
+
+git commit -a -m “created a new repository”
+
+git push
+
+创建目录并提交文件
+
+mkdir myapp
+
+cd myapp
+
+编辑.gitignore加入要忽略的文件
+
+.DS_Store
+
+然后执行：
+
+cd myapp
+git init
+git remote add origin git@YOUR_SERVER:myapp.git
+git add .
+
+git commit -a -m “initial import”
+git push origin master:refs/heads/master
+
+本文来自:http://blog.douhua.im/2009/05/19/ubuntu-server-git/
