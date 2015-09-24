@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Shopping POP</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="whiteList">
+        <item>com.hrtvbic.usb</item>
+        <item>com.hrtvbic.bestv</item>
+        <item>mstar.tvsetting.ui</item>
+    </string-array>
+
+</resources>

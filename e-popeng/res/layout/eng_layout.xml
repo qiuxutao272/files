@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- <RelativeLayout
+        android:layout_width="650px"
+        android:layout_height="174px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/k4_bg" >
+
+        <WebView
+            android:id="@+id/iv_web"
+            android:layout_width="219px"
+            android:layout_height="117px"
+            android:layout_marginLeft="130px"
+            android:layout_marginTop="7px"
+            android:focusable="false" />
+
+        <com.ant.liao.GifView
+        android:id="@+id/iv_gif1"
+        android:layout_width="219px"
+        android:layout_height="117px"
+        android:layout_marginLeft="160px"
+        android:layout_marginTop="30px" />
+    </RelativeLayout> -->
+    <ImageView
+        android:id="@+id/iv_top"
+        android:layout_width="333dp"
+        android:layout_height="104dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/top_pop" />
+    <ImageView
+        android:id="@+id/iv_inch"
+        android:layout_width="200dp"
+        android:layout_height="47dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/inch_pop" />
+    <ImageView
+        android:id="@+id/iv_main"
+        android:layout_width="633dp"
+        android:layout_height="116dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ani_eng" />
+
+</RelativeLayout>
