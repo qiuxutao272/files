@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+    android:background="@drawable/mobile_help"
+    android:layout_gravity="center">
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="43dip"
+        android:layout_marginTop="24dip"
+        android:layout_marginLeft="43dip"
+        android:orientation="horizontal">
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_tittle_logo"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/app_name"
+            style="@style/global_record_txt1"
+            android:textSize="21sp"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="27dip"
+        android:layout_marginTop="21dip"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:id="@+id/connect_mobile_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="未与手机"
+            style="@style/global_record_txt1"
+            android:textSize="21sp"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="遥控器建立连接"
+            style="@style/global_record_txt1"
+            android:textSize="21sp"/>
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
+        android:layout_marginTop="21dip"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="本机名:"
+            style="@style/global_record_txt2"
+            android:textSize="16sp"/>
+        
+        <TextView
+            android:id="@+id/tv_friendlyname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="我的电视(201)"
+            style="@style/global_record_txt2"
+            android:textSize="16sp"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dip">
+        
+        <ImageView 
+            android:id="@+id/img_connect_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_no_one"/>
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/lin_showguide"
+        android:layout_width="300dip"
+        android:layout_height="60dip"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dip"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/btn_seeting_bg">
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_list_help"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="查看使用帮助"
+            style="@style/global_record_txt1"
+            android:textSize="21sp"/>
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/lin_edit_tv_name"
+        android:layout_width="300dip"
+        android:layout_height="60dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="27dip"
+        android:layout_marginBottom="64dip"
+        android:orientation="horizontal"
+        android:background="@drawable/btn_seeting_bg">
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_list_edit"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="27dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="修改电视名"
+            style="@style/global_record_txt1"
+            android:textSize="21sp"/>
+        
+    </LinearLayout>
+    
+	
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+  <color name="transparent_background">#99000000</color>  
+	<color name="blue_sky">#6A9EBA</color>
+	<color name="white">#ffffff</color>
+</resources>

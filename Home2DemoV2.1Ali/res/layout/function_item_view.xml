@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dip"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imageViewFunctionIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:duplicateParentState="true" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:duplicateParentState="true"
+        android:orientation="vertical"
+        android:paddingLeft="32dip" >
+
+        <TextView
+            android:id="@+id/textViewFunction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:lineSpacingExtra="2.0dip"
+            android:shadowColor="#000000"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:singleLine="true"
+            android:text="AAAAA"
+            android:textColor="@color/function_note_text"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewFunctionNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:lineSpacingExtra="2.0dip"
+            android:shadowColor="#000000"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:singleLine="true"
+            android:text="BBBBB"
+            android:textColor="@color/function_note_text"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_more" />
+
+</LinearLayout>

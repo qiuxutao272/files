@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/pop_music_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="1dp"
+    android:paddingTop="1dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:background="@drawable/unfold_music_tittle"
+        android:gravity="center_vertical"
+        android:paddingLeft="21dip"
+        android:paddingRight="21dip" >
+        
+        
+        <ImageView
+            android:id="@+id/ic_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_view_music" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="7dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewSong"
+                style="@style/global_record_txt1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="Song"
+                android:textSize="16sp" />
+            <!--  android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever" -->
+
+            <TextView
+                android:id="@+id/textViewArtist"
+                style="@style/global_record_txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Artist"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textViewMusicProgress"
+                style="@style/global_record_txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:14/06:07"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnMusicShowMore"
+            android:layout_width="53dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scaleType="center"
+            android:background="@drawable/tab_item_bg"
+            android:src="@drawable/ic_music_list" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/btnMusicPlayPause"
+            android:layout_width="53dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scaleType="center"
+            android:background="@drawable/tab_item_bg"
+            android:src="@drawable/ic_music_stop" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/btnMusicClose"
+            android:layout_width="53dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scaleType="center"
+            android:background="@drawable/tab_item_bg"
+            android:src="@drawable/ic_music_off" >
+        </ImageView>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarMusic"
+        style="@style/ProgressBarMusicStyle"
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/horizontal_divider"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="222dip"
+        android:background="@drawable/unfold_music_list"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/horizontal_divider"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:paddingLeft="21dip"
+        android:paddingRight="21dip"
+        android:scrollbarStyle="outsideOverlay"
+        android:listSelector="@drawable/list_item_mid_bg"
+        android:scrollingCache="true"
+        android:visibility="gone" >
+    </ListView>
+
+</LinearLayout>

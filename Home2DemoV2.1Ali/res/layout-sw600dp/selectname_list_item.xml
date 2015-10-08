@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="43dip"
+    android:gravity="center" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:id="@+id/textViewTVName"
+            style="@style/global_record_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="客厅电视1"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imgSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="33dip"
+            android:scaleType="center"
+            android:src="@drawable/ic_name_selected"
+            android:visibility="visible" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="64dp"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/textViewTVTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        android:duplicateParentState="true"
+        android:text="00:00:00"
+        style="@style/global_record_txt1"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textViewTVTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:duplicateParentState="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Title"
+        style="@style/global_record_txt1"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textViewTVChannel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:duplicateParentState="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Channel"
+        style="@style/global_record_txt1"
+        android:textSize="24sp" />
+
+</LinearLayout>

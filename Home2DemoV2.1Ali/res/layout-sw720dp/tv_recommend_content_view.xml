@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/view_shadow"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tv_recom_header"
+        android:layout_width="fill_parent"
+        android:layout_height="64dip"
+        android:background="@drawable/view_tittle"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_recommend_title_id"
+            style="@style/global_record_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tv_recommend_title"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:alpha="0.7"
+        android:background="@color/black" 
+        android:visibility="visible"/>
+    
+    <ScrollView
+        android:id="@+id/tv_scroll_item"
+        android:layout_width="fill_parent"
+        android:layout_height="325dip" >
+
+        <cn.yunzhisheng.vui.assistant.tv.view.ELinearLayout
+            android:id="@+id/tv_recom_programm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_bottom" >
+        </cn.yunzhisheng.vui.assistant.tv.view.ELinearLayout>
+    </ScrollView>
+
+</LinearLayout>

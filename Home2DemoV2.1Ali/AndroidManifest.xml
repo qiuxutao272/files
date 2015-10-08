@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.yunzhisheng.voicetv"
+    android:versionCode="62"
+    android:versionName="5.1.0.61" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="16" />
+
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    
+    <uses-permission android:name="cn.yunzhisheng.permission.RECEIVE_VOICE_COMMAND" />
+    <uses-permission android:name="cn.yunzhisheng.permission.OPERATE_TALK_SERVICE" />
+    <permission android:name="cn.yunzhisheng.permission.RECEIVE_VOICE_COMMAND" />
+    <permission android:name="cn.yunzhisheng.permission.OPERATE_TALK_SERVICE" />
+    
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <!-- vui assistant application -->
+    <application
+        android:name="cn.yunzhisheng.vui.assistant.tv.MainApplication"
+        android:icon="@drawable/desktop_logo"
+        android:label="@string/app_name"
+        android:taskAffinity="cn.yunzhisheng.vui.assistant.tv"
+        android:persistent="true"
+        android:allowBackup="false"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+         >
+
+        <!-- vui assistant activity     -->
+        <activity
+            android:name="cn.yunzhisheng.vui.assistant.tv.MainActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:label="@string/app_name" 
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape">
+            
+        </activity>
+        
+        
+        
+        <activity
+            android:name="cn.yunzhisheng.vui.assistant.AboutActivity"
+            android:theme="@style/AppTheme"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity 
+            android:name="cn.yunzhisheng.vui.assistant.tv.SettingActivity"
+            android:screenOrientation="landscape" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        </activity>
+        
+        <activity 
+            android:name="cn.yunzhisheng.vui.assistant.tv.GuideActivity"
+            android:screenOrientation="landscape" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        </activity>
+        
+        <activity android:name="cn.yunzhisheng.vui.assistant.WeiBoActivity" 
+            android:theme="@style/AppTheme"
+            >
+        </activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.Authorize"
+            android:theme="@style/AppTheme"
+             >
+        </activity>
+        <activity android:name="com.tencent.weibo.webview.OAuthV2AuthorizeWebView" 
+            android:theme="@style/AppTheme"
+            >
+        </activity>
+      <!--  <activity
+            android:name="cn.yunzhisheng.vui.assistant.tv.ShowMoviePictureActivity"
+            android:label="@string/app_name"
+             android:launchMode="singleInstance"
+             android:screenOrientation="landscape"
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity> -->
+        <!-- vui assistant receiver -->
+        <receiver android:name="cn.yunzhisheng.vui.assistant.tv.MessageReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.CLOSE_SYSTEM_DIALOGS" />
+                <action android:name="cn.yunzhisheng.ACTION_SHOW_CHANNEL" />
+            </intent-filter>
+             <intent-filter >
+                 <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                 <action android:name="android.intent.action.MEDIA_EJECT" />
+      					 <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <!-- 2.4G start voice recording message -->
+                <action android:name="cn.yunzhisheng.intent.voice.start" />
+                <!-- 2.4G stop voice recording message -->
+                <action android:name="cn.yunzhisheng.intent.voice.stop" />
+                
+                <category android:name="cn.yunzhisheng.intent.category.RECOGNIZE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- vui assistant service -->
+        <service android:name="cn.yunzhisheng.vui.assistant.tv.talk.TalkService" >
+             <intent-filter>
+                <action android:name="cn.yunzhisheng.vui.assistant.tv.talk.ITalkService" />
+            </intent-filter>
+        </service>
+        <service android:name="cn.yunzhisheng.vui.assistant.tv.media.MusicPlaybackService" />
+        <service android:name="cn.yunzhisheng.vui.assistant.tv.WindowService" >
+            <intent-filter>
+                <action android:name="cn.yunzhisheng.intent.action.WINDOW_SERVICE" />
+            </intent-filter>
+        </service>
+        
+		<!-- vui tv assistant -->
+        <service android:name="cn.yunzhisheng.vui.socket.BrowserUpnpService"/>
+   
+        
+        
+        <activity
+            android:name="com.example.demo.MainActivity"
+            android:label="@string/app_name" 
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">  
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.MONKEY" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.demo.MainActivity2">
+        </activity>
+        <activity
+            android:name="com.example.demo.MainActivityNew">
+        </activity>
+        
+         <activity android:name="com.example.demo.picture4K1"></activity>
+          <activity android:name="com.example.demo.picture4K2"> </activity>      
+           <activity android:name="com.example.demo.picture4K3"> </activity>
+           <activity android:name="com.example.demo.picture4K4"></activity>
+         <activity  android:name="com.example.demo.picture4K5"></activity>
+          <activity  android:name="com.example.demo.pictureMo1"></activity>
+           <activity  android:name="com.example.demo.pictureMo2"></activity>
+            <activity  android:name="com.example.demo.pictureMo3"></activity>
+            <activity  android:name="com.example.demo.pictureMo4"></activity>
+            <activity  android:name="com.example.demo.pictureMo5"></activity>
+           <activity  android:name="com.example.demo.pictureDoc1"></activity>
+           <activity  android:name="com.example.demo.pictureDoc2"></activity>
+            <activity  android:name="com.example.demo.pictureDoc3"></activity>
+            <activity  android:name="com.example.demo.pictureDoc4"></activity>
+            <activity  android:name="com.example.demo.pictureDoc5"></activity>
+            <activity  
+                android:name="com.example.demo.ShowMusicActivity">
+            </activity>
+            <activity  
+                android:name="com.example.demo.ShowMusicDcoActivity">
+            </activity>
+            
+         <activity
+            android:name="com.example.demo.YuYinSiRenFilm1">
+         </activity>
+         <activity
+            android:name="com.example.demo.YuYinYingYuan">
+         </activity>
+    <activity
+            android:name="com.example.demo.YuYinSiRenFilm2">
+         </activity>
+          <activity
+            android:name="com.example.demo.YuYinHighQingJiaoYu1">
+         </activity>
+           <activity
+            android:name="com.example.demo.YuYinHighQingJiaoYu2">
+         </activity>
+		<activity
+             android:name="com.example.demo.VideoPayActivity"
+             android:launchMode="singleInstance"
+             android:screenOrientation="landscape"
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+          <activity
+            android:name="com.example.demo.Bianxingjingang"
+            android:label="@string/app_name"
+             android:launchMode="singleInstance"
+             android:screenOrientation="landscape"
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        
+         <activity
+            android:name="com.example.demo.Adidaxie"
+            android:label="@string/app_name"
+             android:launchMode="singleInstance"
+             android:screenOrientation="landscape"
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+       
+         <activity
+            android:name="com.example.demo.Bailunxie"
+            android:label="@string/app_name"
+             android:launchMode="singleInstance"
+             android:screenOrientation="landscape"
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+         
+         <activity
+            android:name="com.example.demo.Caipiao"
+            android:label="@string/app_name"
+             android:launchMode="singleInstance"
+             android:screenOrientation="landscape"
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+         
+         <activity
+            android:name="com.example.demo.Chuanglian"
+            android:label="@string/app_name"
+             android:launchMode="singleInstance"
+             android:screenOrientation="landscape"
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+         
+         <activity
+            android:name="com.example.demo.Dazao"
+            android:label="@string/app_name"
+             android:launchMode="singleInstance"
+             android:screenOrientation="landscape"
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+         
+         <activity
+            android:name="com.example.demo.Hetao"
+            android:label="@string/app_name"
+             android:launchMode="singleInstance"
+             android:screenOrientation="landscape"
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        
+         <activity
+            android:name="com.example.demo.Matong"
+            android:label="@string/app_name"
+             android:launchMode="singleInstance"
+             android:screenOrientation="landscape"
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+         
+         <activity
+            android:name="com.example.demo.Shandiche"
+            android:label="@string/app_name"
+             android:launchMode="singleInstance"
+             android:screenOrientation="landscape"
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        
+         <activity
+            android:name="com.example.demo.Shop_Activity"
+             android:label="@string/app_name"
+             android:launchMode="singleInstance"
+             android:screenOrientation="landscape"
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        
+         <activity
+
+            android:name="com.example.demo.ShopVip"
+             android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+         <activity
+            android:name="com.example.demo.gouwuActivity"
+            android:label="@string/app_name"
+             android:launchMode="singleInstance"
+             android:screenOrientation="landscape"
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+		<service android:name="com.example.demo.MusicService" /> 
+		
+         <receiver android:name="com.example.demo.MessageReceiver" >
+            <intent-filter>            
+                <action android:name="cn.open.music.yingyuan" />  
+                <action android:name="cn.open.music.jiaoyu" />  
+              <action android:name="cn.open.music.changge" />  
+               <action android:name="cn.open.music.paomo" />  
+                <action android:name="cn.open.music.xihuanni" />  
+                 <action android:name="cn.open.music.zaixiwangdetianyeshang" />  
+                  <action android:name="cn.open.music.beijingbeijing" />  
+                   <action android:name="cn.open.music.chongchongnanian" />  
+                    <action android:name="cn.open.music.piaoyangguohailaikanni" />  
+                     <action android:name="cn.open.music.heyiaiqing" />  
+                      <action android:name="cn.open.music.shijiandouqunale" />  
+                       <action android:name="cn.open.music.xiaopingguo" />  
+                        <action android:name="cn.open.music.xiaoqingge" />  
+                         <action android:name="cn.open.music.zuixuanminzufeng" />  
+                          <action android:name="cn.open.music.jingju" />  
+                           <action android:name="cn.open.music.yuju" />  
+                            <action android:name="cn.open.music.xiaowangshu" /> 
+                            <action android:name="cn.open.yingyuan" />
+                            <action android:name="cn.open.jiliukuaiting" />
+                            <action android:name="cn.open.picture.shop4" /> 
+                <action android:name="cn.open.picture.shop" />
+                <action android:name="cn.open.picture.shop5" /> 
+                <action android:name="cn.open.picture.shop6" />
+                <action android:name="cn.open.picture.shop7" /> 
+                <action android:name="cn.open.picture.shop8" /> 
+                <action android:name="cn.open.picture.shop9" />
+                <action android:name="cn.open.picture.shop10" /> 
+                <action android:name="cn.open.picture.shop11" />
+            </intent-filter>
+        </receiver> 
+      </application>
+
+</manifest>

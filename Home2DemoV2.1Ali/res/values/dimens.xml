@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="session_item_margin">8.7dp</dimen>
+    <!-- session padding -->
+    <dimen name="session_padding_left">28dp</dimen>
+    <dimen name="session_padding_right">60dp</dimen>
+    <dimen name="session_padding_top">0dp</dimen>
+    <dimen name="session_padding_bottom">0dp</dimen>
+
+    <!-- session text padding -->
+    <dimen name="session_text_padding_left">30dp</dimen>
+    <dimen name="session_text_padding_right">25dp</dimen>
+    <dimen name="session_text_padding_top">15dp</dimen>
+    <dimen name="session_text_padding_bottom">15dp</dimen>
+
+    <!-- function padding -->
+    <dimen name="function_padding_left">0dp</dimen>
+    <dimen name="function_padding_right">0dp</dimen>
+    <dimen name="function_padding_top">0dp</dimen>
+    <dimen name="function_padding_bottom">0dp</dimen>
+
+    <!-- function item padding -->
+    <dimen name="function_item_padding_left">32dp</dimen>
+    <dimen name="function_item_padding_right">32dp</dimen>
+    <dimen name="function_item_more_help">66dp</dimen>
+
+    <!-- pick persion padding -->
+    <dimen name="pick_persion_padding_left">6dp</dimen>
+    <dimen name="pick_persion_padding_right">16.7dp</dimen>
+    <dimen name="pick_persion_padding_top">20dp</dimen>
+    <dimen name="pick_persion_padding_bottom">8dp</dimen>
+
+    <!-- pick phone number padding -->
+    <dimen name="pick_phone_number_padding_left">6dp</dimen>
+    <dimen name="pick_phone_number_padding_right">6dp</dimen>
+    <dimen name="pick_phone_number_padding_top">6dp</dimen>
+    <dimen name="pick_phone_number_padding_bottom">6dp</dimen>
+
+    <!-- pick view -->
+    <dimen name="pick_view_cancel_button_height">50dp</dimen>
+
+    <!-- pick music padding -->
+    <dimen name="pick_music_padding_left">0dp</dimen>
+    <dimen name="pick_music_padding_right">0dp</dimen>
+    <dimen name="pick_music_padding_top">0dp</dimen>
+    <dimen name="pick_music_padding_bottom">0dp</dimen>
+
+    <!-- call content view padding -->
+    <dimen name="call_content_view_margin_left">0dp</dimen>
+    <dimen name="call_content_view_margin_right">0dp</dimen>
+    <dimen name="call_content_view_margin_top">0dp</dimen>
+    <dimen name="call_content_view_margin_bottom">0dp</dimen>
+
+    <!-- Datetime pick item text size -->
+    <dimen name="wheel_view_item_text_size">16sp</dimen>
+    <dimen name="poi_sort_list_divider_height">0.9dp</dimen>
+    <dimen name="poi_sort_list_item_width">120dp</dimen>
+
+    <!-- Poi -->
+    <dimen name="poi_list_divier_margin">5dp</dimen>
+    
+    <!-- Microphone dialog -->
+    <dimen name="microphone_dialog_width">472dp</dimen>
+    <dimen name="microphone_dialog_height">245dp</dimen> 
+    
+    
+    <dimen name="function_item_height">65dip</dimen>
+    <dimen name="pop_music_width">544dip</dimen>
+    <dimen name="pop_selectname_width">800dip</dimen>
+    <dimen name="pop_music_height">325dip</dimen>
+    
+    
+        <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="lefttab_top_margin">20dp</dimen>
+	<dimen name="lefttab_split_margin">15dp</dimen>
+	<dimen name="lefttab_bottom_margin">20dp</dimen>
+	<dimen name="topline2itemmargin">182dp</dimen>
+	<dimen name="topcolume1itemleftmargin">485dp</dimen>
+	<dimen name="topcolume2itemleftmargin">712dp</dimen>
+	<dimen name="topitemwidth">212dp</dimen>
+	<dimen name="topitemheight">137dp</dimen>
+	<dimen name="topitemtopmargin">30dp</dimen>
+	<dimen name="topitemleftmargin">30dp</dimen>
+	<dimen name="bottomitemheight">287dp</dimen>
+	<dimen name="bottomitemtopmargin">334dp</dimen>
+	<dimen name="rootleftmargin">250dp</dimen>
+	<dimen name="languangleftmargin">50dp</dimen>
+	<dimen name="roottopmargin">65dp</dimen>
+	<dimen name="filmdetailtitleleftmargin">100dp</dimen>
+	<dimen name="filmdetailyouwantleftmargin">760dp</dimen>
+</resources>

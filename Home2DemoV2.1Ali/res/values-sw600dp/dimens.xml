@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="session_item_margin">5.8dp</dimen>
+    <!-- session padding -->
+    <dimen name="session_padding_left">18.6dp</dimen>
+    <dimen name="session_padding_right">40dp</dimen>
+    <dimen name="session_padding_top">0dp</dimen>
+    <dimen name="session_padding_bottom">0dp</dimen>
+
+    <!-- session text padding -->
+    <dimen name="session_text_padding_left">20dp</dimen>
+    <dimen name="session_text_padding_right">16.6dp</dimen>
+    <dimen name="session_text_padding_top">10dp</dimen>
+    <dimen name="session_text_padding_bottom">10dp</dimen>
+
+    <!-- function padding -->
+    <dimen name="function_padding_left">0dp</dimen>
+    <dimen name="function_padding_right">0dp</dimen>
+    <dimen name="function_padding_top">0dp</dimen>
+    <dimen name="function_padding_bottom">0dp</dimen>
+
+    <!-- function item padding -->
+    <dimen name="function_item_padding_left">21.3dp</dimen>
+    <dimen name="function_item_padding_right">21.3dp</dimen>
+    <dimen name="function_item_more_help">44dp</dimen>
+
+    <!-- pick persion padding -->
+    <dimen name="pick_persion_padding_left">4dp</dimen>
+    <dimen name="pick_persion_padding_right">11.1dp</dimen>
+    <dimen name="pick_persion_padding_top">13.3dp</dimen>
+    <dimen name="pick_persion_padding_bottom">5.3dp</dimen>
+
+    <!-- pick phone number padding -->
+    <dimen name="pick_phone_number_padding_left">4dp</dimen>
+    <dimen name="pick_phone_number_padding_right">4dp</dimen>
+    <dimen name="pick_phone_number_padding_top">4dp</dimen>
+    <dimen name="pick_phone_number_padding_bottom">4dp</dimen>
+
+    <!-- pick view -->
+    <dimen name="pick_view_cancel_button_height">33.3dp</dimen>
+
+    <!-- pick music padding -->
+    <dimen name="pick_music_padding_left">0dp</dimen>
+    <dimen name="pick_music_padding_right">0dp</dimen>
+    <dimen name="pick_music_padding_top">0dp</dimen>
+    <dimen name="pick_music_padding_bottom">0dp</dimen>
+
+    <!-- call content view padding -->
+    <dimen name="call_content_view_margin_left">0dp</dimen>
+    <dimen name="call_content_view_margin_right">0dp</dimen>
+    <dimen name="call_content_view_margin_top">0dp</dimen>
+    <dimen name="call_content_view_margin_bottom">0dp</dimen>
+
+    <!-- Datetime pick item text size -->
+    <dimen name="wheel_view_item_text_size">10.6sp</dimen>
+    <dimen name="poi_sort_list_divider_height">0.9dp</dimen>
+    <dimen name="poi_sort_list_item_width">80dp</dimen>
+
+    <!-- Poi -->
+    <dimen name="poi_list_divier_margin">3.3dp</dimen>
+    
+    <!-- Microphone dialog -->
+    <dimen name="microphone_dialog_width">472dp</dimen>
+    <dimen name="microphone_dialog_height">245dp</dimen> 
+    
+    
+    <dimen name="function_item_height">43dip</dimen>
+    <dimen name="pop_music_width">380dip</dimen>
+    <dimen name="pop_selectname_width">533dip</dimen>
+    <dimen name="pop_music_height">217dip</dimen>
+    
+</resources>

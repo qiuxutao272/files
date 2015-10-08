@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="69dp"
+    android:background="@drawable/view_tittle"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/ic_music"
+            android:paddingLeft="32dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_view_music" />
+
+        <TextView
+            android:id="@+id/textViewMusicHeaderSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ic_music"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:text="Song"
+            android:textColor="@color/grey_white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewMusicHeaderArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/textViewMusicProgress"
+            android:layout_toRightOf="@+id/textViewMusicHeaderSong"
+            android:text="Artist"
+            android:textColor="@color/light_grey"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textViewMusicProgress"
+            style="@style/global_record_txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="32dip"
+            android:text="00:14/06:07"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarMusic"
+            style="@style/ProgressBarMusicStyle"
+            android:layout_width="match_parent"
+            android:layout_height="5dip"
+            android:layout_alignParentBottom="true"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="days_of_week">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <string-array name="memo_indicator">
+        <item>@string/to_do</item>
+        <item>@string/completed</item>
+    </string-array>
+    <string-array name="tts_engine">
+        <item>@string/online_tts</item>
+        <item>@string/offline_tts</item>
+    </string-array>
+    <string-array name="knowledge_stage_contact_not_found">
+        <item>对不起，没有找到%1$s</item>
+        <item>对不起，不存在联系人%1$s</item>
+        <item>对不起，没有找到这个联系人</item>
+    </string-array>
+    <string-array name="knowledge_stage_contact_auto_pick">
+        <item>正在为你选择第%1$s个联系人</item>
+        <item>帮你选择了第%1$s个联系人</item>
+    </string-array>
+    <string-array name="knowledge_stage_number_not_found">
+        <item> 对不起，该联系人没有保存电话号码</item>
+        <item>对不起，%1$s还没有保存号码</item>
+        <item>对不起，找不到%1$s的可用号码</item>
+    </string-array>
+    <string-array name="knowledge_stage_number_auto_pick">
+        <item>正在为你选择第%1$s个号码</item>
+        <item>帮你选择了第%1$s个号码</item>
+    </string-array>
+    <string-array name="knowledge_stage_call_contact_name">
+        <item>请说联系人姓名</item>
+        <item>你准备给谁打电话?</item>
+        <item>请说出你要拨打人的姓名</item>
+        <item>你想打电话给谁?</item>
+    </string-array>
+    <string-array name="knowledge_stage_call_contact_name_no_recognise_result_1">
+        <item>对不起，请说通讯录中存在的联系人姓名</item>
+        <item>对不起，并未找到你说的联系人，请重新说</item>
+        <item>对不起，联系人不存在，请再说一次</item>
+    </string-array>
+    <string-array name="knowledge_stage_call_contact_name_no_recognise_result_2">
+        <item>又错了？请务必说通讯录中存在的联系人的姓名，或者说取消来退出电话功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_call_contact_name_no_recognise_result_3">
+        <item>我很抱歉，我无法找到您想要联系的人，我将退出电话功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_call_contact_name_no_input_1">
+        <item>对不起，请在听到提示音之后开始说话</item>
+    </string-array>
+    <string-array name="knowledge_stage_call_contact_name_no_input_2">
+        <item>又错了？是不是离麦克风太远了，请离麦克风近一点</item>
+    </string-array>
+    <string-array name="knowledge_stage_call_contact_name_no_input_3">
+        <item>我很抱歉，我没有听到你说的话，我将退出电话功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_call_dialing">
+        <item>正在为你接通%1$s的电话</item>
+        <item>正在拨打%1$s的电话</item>
+    </string-array>
+    <string-array name="knowledge_stage_sms_contact_name">
+        <item>请说联系人姓名</item>
+        <item>你想给谁发信息</item>
+        <item>请说出你要发短信的人的姓名</item>
+    </string-array>
+    <string-array name="knowledge_stage_sms_content">
+        <item>请说短信内容</item>
+        <item>请告诉我短信内容</item>
+    </string-array>
+    <string-array name="knowledge_stage_sms_content_continue">
+        <item>请继续说短信内容或者说发送</item>
+        <item>你可以继续说短信内容或者说发送</item>
+    </string-array>
+    <string-array name="knowledge_stage_sms_contact_name_no_recognise_result_1">
+        <item>对不起，请说通讯录中存在的联系人姓名</item>
+        <item>对不起，并未找到你说的联系人，请重新说</item>
+        <item>对不起，联系人不存在，请再说一次</item>
+    </string-array>
+    <string-array name="knowledge_stage_sms_contact_name_no_recognise_result_2">
+        <item>又错了？请务必说通讯录中存在的联系人的姓名，或者说取消来退出短信功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_sms_contact_name_no_recognise_result_3">
+        <item>我很抱歉，我无法找到您想要联系的人，我将退出短信功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_weibo_content">
+        <item>请说微博内容后发送</item>
+    </string-array>
+    <string-array name="knowledge_stage_weibo_content_continue">
+        <item>请继续说微博内容或者说发送</item>
+    </string-array>
+    <string-array name="knowledge_stage_memo_datetime">
+        <item>请说提醒时间</item>
+        <item>请告诉我什么时候提醒你</item>
+        <item>请告诉我提醒的具体时间</item>
+    </string-array>
+    <string-array name="knowledge_stage_memo_created">
+        <item>提醒创建成功</item>
+        <item>已为您创建提醒成功</item>
+        <item>好的，我将在%1$s提醒你</item>
+    </string-array>
+    <string-array name="knowledge_stage_memo_datetime_expired_1">
+        <item>对不起，不能使用过去的时间作为提醒时间，请重新说提醒时间</item>
+    </string-array>
+    <string-array name="knowledge_stage_memo_datetime_expired_2">
+        <item>时间已经过去了，没办法再回头，请说一个未来的时间</item>
+    </string-array>
+    <string-array name="knowledge_stage_memo_datetime_expired_3">
+        <item>对不起，我实在没办法回到过去去提醒你，我将退出这个功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_memo_datetime_no_recognise_result_1">
+        <item>对不起，请说提醒时间，比如明天早上八点</item>
+    </string-array>
+    <string-array name="knowledge_stage_memo_datetime_no_recognise_result_2">
+        <item>又错了？请尽可能清楚的再说一次，或者说取消来退出这个功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_memo_datetime_no_recognise_result_3">
+        <item>我很抱歉，我不知道该什么时候提醒你，我将退出这个功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_open_name">
+        <item>你要打开什么软件</item>
+        <item>请说软件名称</item>
+        <item>请说应用的名称</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_not_found">
+        <item>对不起，没有找到应用</item>
+        <item>对不起，应用%1$s不存在</item>
+        <item>不好意思，没有找到这个应用</item>
+    </string-array>
+    <string-array name="knowledge_stage_web_not_found">
+        <item>对不起，没有找到该网页</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_auto_pick">
+        <item>正在为你选择第%1$s个应用</item>
+        <item>帮你选择了第%1$s个应用</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_opening">
+        <item>正在为你打开应用%1$s</item>
+        <item>正在打开%1$s</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_open_name_no_recognise_result_1">
+        <item>对不起，请说应用的名称</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_open_name_no_recognise_result_2">
+        <item>又错了？请尽可能清楚的再说一次，或者说取消来退出这个功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_open_name_no_recognise_result_3">
+        <item> 我很抱歉，我不知道该打开什么应用，我将退出这个功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_uninstall_name">
+        <item>你要卸载什么软件</item>
+        <item>请说软件名称</item>
+        <item>请说应用的名称</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_uninstalling">
+        <item>正在为你卸载应用%1$s</item>
+        <item>正在卸载%1$s</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_close_name">
+        <item>你要关闭什么软件</item>
+        <item>请说软件名称</item>
+        <item>请说应用的名称</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_closing">
+        <item>正在为你关闭应用%1$s</item>
+        <item>正在关闭%1$s</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_uninstall_name_no_recognise_result_1">
+        <item>对不起，请说应用的名称</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_uninstall_name_no_recognise_result_2">
+        <item>又错了？请尽可能清楚的再说一次，或者说取消来退出这个功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_uninstall_name_no_recognise_result_3">
+        <item> 我很抱歉，我不知道该卸载什么应用，我将退出这个功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_weather_fetching">
+        <item> 正在获取天气数据，请稍等</item>
+        <item>读取天气数据中，请稍后</item>
+    </string-array>
+    <string-array name="knowledge_stage_network_exception">
+        <item> 对不起，网络访问超时，请稍后再试</item>
+        <item>对不起，网络异常，请稍后重试</item>
+    </string-array>
+    <string-array name="knowledge_stage_no_network">
+        <item> 对不起，无法访问网络，请检查网络连接设置</item>
+    </string-array>
+    <string-array name="knowledge_stage_network_timeout">
+        <item> 对不起，网络超时了，请稍后再试</item>
+    </string-array>
+    <string-array name="knowledge_stage_weather_city_not_found">
+        <item>对不起，没有找到城市：%1$s</item>
+        <item>对不起，暂时不支持这个城市</item>
+    </string-array>
+    <string-array name="knowledge_stage_weather_locate_failed">
+        <item>对不起，获取当前位置失败，无法提供天气服务</item>
+        <item>对不起，无法得知你当前所在的城市，无法提供天气服务</item>
+    </string-array>
+    <string-array name="knowledge_stage_search_keyword">
+        <item>请问你要搜索什么</item>
+        <item>请说你要搜索的关键字</item>
+        <item>请说你要查询什么</item>
+    </string-array>
+    <string-array name="knowledge_stage_no_recognise_result">
+        <item>对不起，暂时还不支持这个功能，我会尽快学会的</item>
+        <item>对不起，我无法理解您的话</item>
+        <item>很抱歉，我无法回答您的问题</item>
+        <item>你的这句话我没学过，我会继续努力学习的</item>
+        <item>对不起，我听不懂这个命令哦！</item>
+    </string-array>
+    <string-array name="knowledge_stage_music_not_found">
+        <item>对不起，没有找到%1$s</item>
+        <item>很抱歉，没有找到%1$s这首歌曲，你可以再试一次</item>
+    </string-array>
+    <string-array name="knowledge_stage_no_input">
+        <item>不知道说什么吗？试试“我想看速度与激情”吧</item>
+        <item>不知道说什么吗？试试“我想看湖南卫视”吧</item>
+        <item>可能您说话声音太小，没听清楚，能重复下吗？</item>
+    </string-array>
+    <string-array name="knowledge_stage_help">
+        <item>您好，有什么可以帮您的？</item>
+    </string-array>
+    <string-array name="knowledge_grammer_keyword_call">
+        <item>电话</item>
+        <item>拨通</item>
+        <item>呼叫</item>
+        <item>手机</item>
+        <item>家里的电话</item>
+        <item>座机</item>
+        <item>小灵通</item>
+    </string-array>
+    <string-array name="knowledge_grammer_keyword_sms">
+        <item>短信</item>
+        <item>短消息</item>
+        <item>简讯</item>
+        <item>消息</item>
+        <item>告诉</item>
+        <item>信息</item>
+    </string-array>
+    <string-array name="knowledge_grammer_keyword_weibo">
+        <item>微博</item>
+        <item>围脖</item>
+        <item>微波</item>
+        <item>围脖儿</item>
+    </string-array>
+    <string-array name="knowledge_grammer_keyword_weather">
+        <item>天气</item>
+        <item>温度</item>
+        <item>气温</item>
+    </string-array>
+    <string-array name="knowledge_grammer_keyword_app">
+        <item>打开</item>
+        <item>启动</item>
+        <item>软件</item>
+        <item>程序</item>
+        <item>加载</item>
+        <item>运行</item>
+        <item>卸载</item>
+        <item>删除</item>
+        <item>开启</item>
+    </string-array>
+    <string-array name="knowledge_grammer_keyword_memo">
+        <item>提醒</item>
+        <item>闹钟</item>
+        <item>开会</item>
+        <item>叫醒</item>
+        <item>记一下</item>
+        <item>备忘</item>
+        <item>记下</item>
+    </string-array>
+    <string-array name="knowledge_grammer_keyword_search">
+        <item>搜索</item>
+        <item>收缩</item>
+        <item>收索</item>
+        <item>百度</item>
+        <item>谷歌</item>
+        <item>搜狗</item>
+        <item>必应</item>
+        <item>雅虎</item>
+    </string-array>
+    <string-array name="knowledge_grammer_example_call">
+        <item>失败了吗？你可以说“打电话给某某某”来给ta打电话的！</item>
+        <item>失败了吗？你可以尝试说“给某某某打电话”来给ta打电话的！</item>
+        <item>失败了吗？你还可以说“打某某某的电话”来给ta打电话的！</item>
+        <item>你可以说“打电话给某某某”来给ta打电话的！</item>
+    </string-array>
+    <string-array name="knowledge_grammer_example_sms">
+        <item>失败了，你可以说“发短信给某某某”来给ta发短信！</item>
+        <item>你可以说“发短信给某某某”来给ta发短信！</item>
+    </string-array>
+    <string-array name="knowledge_grammer_example_weibo">
+        <item>你可以尝试说一下“发微博”！</item>
+        <item>你可以说“发微博”来分享一条微博！</item>
+        <item>失败了吗？你还可以说“发新浪微博”来分享一条微博！</item>
+    </string-array>
+    <string-array name="knowledge_grammer_example_weather">
+        <item>查询天气的话可以说“天气查询”！</item>
+        <item>你可以说“今天天气怎么样”来查询最近本地天气！</item>
+        <item>失败了吗？你还可以说“北京天气怎么样”来查询最近北京的天气！</item>
+    </string-array>
+    <string-array name="knowledge_grammer_example_app">
+        <item>想打开相机可以说“打开相机”！</item>
+        <item>你可以说“打开图库”来打开里安装的图库应用！</item>
+        <item>失败了吗？你还可以说“打开图库”！</item>
+    </string-array>
+    <string-array name="knowledge_grammer_example_memo">
+        <item>你可以说“提醒”来设置提醒！</item>
+        <item>你可以说“提醒我”来设置提醒！</item>
+        <item>你可以说“提醒一下”来设置提醒！</item>
+    </string-array>
+    <string-array name="knowledge_grammer_example_search">
+        <item>你可以说“搜索刘翔”来搜索关键字“刘翔”！</item>
+        <item>失败了吗？你也可以说“百度搜索中国好声音”</item>
+        <item>失败了吗？你还可以说“谷歌上海”，使用谷歌搜索“上海”！</item>
+    </string-array>
+    <string-array name="function_example_call">
+        <item>“打电话给张三”</item>
+        <item>“打电话给爸爸”</item>
+        <item>“给李四打电话”</item>
+        <item>“打给元芳”</item>
+    </string-array>
+    <string-array name="function_example_sms">
+        <item>“发短信给王五”</item>
+        <item>“给老爸发信息”</item>
+        <item>“给老爸发信息你什么时候回家吃饭”</item>
+        <item>“发信息给李四内容是有空出来聚下吗”</item>
+    </string-array>
+    <string-array name="function_example_weibo">
+        <item>“发微博”</item>
+        <item>“发新浪微博”</item>
+    </string-array>
+    <string-array name="function_example_weather">
+        <item>“上海的天气怎么样”</item>
+        <item>“查询北京的天气”</item>
+    </string-array>
+    <string-array name="function_example_app">
+        <item>“打开相册”</item>
+        <item>“关闭浏览器”</item>
+        <item>“卸载优酷”</item>
+    </string-array>
+    <string-array name="function_example_channel_switch">
+        <item>“我想看芒果台”</item>
+        <item>“跳到江苏卫视”</item>
+        <item>“切换到浙江卫视”</item>
+    </string-array>
+    <string-array name="function_example_shop">
+        <item>“我想买条牛仔裤”</item>
+        <item>“淘宝搜索一下豆浆机”</item>
+        <item>“淘宝买个移动电源”</item>
+    </string-array>
+    <string-array name="function_example_search">
+        <item>“搜索中国好声音”</item>
+        <item>“打开优酷网”</item>
+        <item>“百度一下姚明”</item>
+    </string-array>
+    <string-array name="function_example_memo">
+        <item>“提醒我明天早上八点出门”</item>
+        <item>“明天早上九点提醒我开会”</item>
+    </string-array>
+    <string-array name="function_example_route">
+        <item>“从北京到天津怎么走”</item>
+        <item>“从这里到上海火车站怎么走”</item>
+        <item>“从上海体育馆到东方明珠最近的路怎么走”</item>
+    </string-array>
+    <string-array name="function_example_nearby">
+        <item>“上海火车站附近有没有肯德基”</item>
+        <item>“附近有什么酒店吗”</item>
+        <item>“查找附近的美食”</item>
+        <item>“徐家汇附近有没有KTV”</item>
+        <item>“陆家嘴附近有没有什么好吃的”</item>
+    </string-array>
+    <string-array name="function_example_music">
+        <item>“播放一首《朋友》”</item>
+        <item>“我想听刘德华的《忘情水》”</item>
+        <item>“听张学友的歌”</item>
+        <item>“放首歌吧”</item>
+    </string-array>
+    <string-array name="function_example_tv">
+        <item>“湖南卫视的节目预告”</item>
+        <item>“《非诚勿扰》的播出时间”</item>
+        <item>“《天天向上》在哪个台播出”</item>
+    </string-array>
+    <string-array name="function_example_stock">
+        <item>“工商银行的股票”</item>
+        <item>“查询一下工商银行的股票”</item>
+        <item>“300104的股票行情”</item>
+    </string-array>
+    <string-array name="function_example_flight">
+        <item>“查询北京到上海的航班”</item>
+        <item>“帮我查一下北京到上海的飞机票”</item>
+        <item>“帮我找找北京到上海的机票”</item>
+    </string-array>
+    <string-array name="function_example_train">
+        <item>“查询北京到上海的火车票”</item>
+        <item>“帮我查一下北京到上海的高铁票”</item>
+        <item>“帮我找找北京到上海的动车”</item>
+    </string-array>
+    <string-array name="function_example_yellowpage">
+        <item>“拨打中国移动的客服电话”</item>
+        <item>“打电话给10086”</item>
+        <item>“接通招商银行的客服电话”</item>
+    </string-array>
+    <string-array name="function_example_sitemap">
+        <item>“搜索中国好声音”</item>
+        <item>“打开优酷网”</item>
+        <item>“百度一下姚明”</item>
+    </string-array>
+    <string-array name="function_example_cookbook">
+        <item>“水煮牛肉”</item>
+        <item>“肉末茄子怎么做”</item>
+        <item>“糖醋排骨的做法”</item>
+    </string-array>
+    <string-array name="function_example_news">
+        <item>“娱乐新闻”</item>
+        <item>“今日头条”</item>
+        <item>“今天有什么新闻”</item>
+    </string-array>
+    <string-array name="function_example_translation">
+        <item>“英文翻译早上好”</item>
+        <item>“酸奶翻译成英文”</item>
+        <item>“这个多少钱翻译成英语”</item>
+    </string-array>
+    <string-array name="function_example_movie">
+        <item>“最近有什么好看的电影”</item>
+        <item>“有什么即将上映的电影”</item>
+        <item>“今天有什么电影”</item>
+    </string-array>
+    <string-array name="function_example_video">
+        <item>“我想看《甄嬛传》”</item>
+        <item>“我想看刘德华的电影”</item>
+        <item>“我要看综艺节目”</item>
+    </string-array>
+    <string-array name="function_example_novel">
+        <item>“最新的小说”</item>
+        <item>“励志方面的小说”</item>
+        <item>“帮我找一下斗破苍穹这本小说”</item>
+    </string-array>
+    <string-array name="function_example_contact">
+        <item>“张三的电话是多少”</item>
+        <item>“查看联系人张三”</item>
+        <item>“把张三的电话发给李四”</item>
+    </string-array>
+    <string-array name="function_example_setting">
+        <item>“静音”</item>
+        <item>“取消静音”</item>
+        <item>“增大音量”</item>
+        <item>“减小音量”</item>
+    </string-array>
+    <string-array name="function_example_talk">
+        <item>“今天是多少号”</item>
+        <item>“十万加一百万等于多少”</item>
+        <item>“讲个笑话吧”</item>
+    </string-array>
+    <string-array name="function_example_mobile">
+        <item>1、打开手机遥控器</item>
+        <item>2、输入电视的IP地址</item>
+        <item>3、点击连接</item>
+    </string-array>
+
+    <!-- update by liangzifeng -->
+    <string-array name="input_key_guide">
+        <item>请按语音键</item>
+        <item>请按上方向键</item>
+        <item>请按下方向键</item>
+        <item>请按左方向键</item>
+        <item>请按右方向键</item>
+        <item>请按确定键</item>
+    </string-array>
+    
+    
+    <string-array name="knowledge_randow_video">
+        <item>你可以说“%1$s”来搜索视频</item>
+        <item>你可以这样问我：%1$s</item>
+        <item>你可以这么跟我说“%1$s”来搜索视频节目</item>
+        <item>说“%1$s”观看相关视频节目</item>
+    </string-array>
+    
+    <string-array name="knowledge_randow_video_content_one">
+        <item>我要看</item>
+        <item>我想看</item>
+        <item>看</item>
+        <item>搜索</item>
+        <item></item>
+    </string-array>
+    
+    <string-array name="knowledge_randow_video_content_two">
+        <item>《甄嬛传》</item>
+        <item>《速度与激情》</item>
+        <item>《爸爸去哪儿》</item>
+        <item>《咱们结婚吧》</item>
+        <item>《爱情公寓》</item>
+        <item>《天龙八部》</item>
+        <item>《天天向上》</item>
+        <item>刘德华的电影</item>
+    </string-array>
+    
+    
+    <string-array name="knowledge_randow_tv">
+        <item>你可以说“%1$s”来查看相关节目信息</item>
+        <item>说“%1$s”来查看节目预告</item>
+        <item>你可以这样跟我说：%1$s</item>
+        <item>试试说“%1$s”查看相关信息</item>
+    </string-array>
+    
+    <string-array name="knowledge_randow_tv_content_two">
+        <item>湖南卫视节目预告</item>
+        <item>中央一套节目单</item>
+        <item>芒果台的节目时间表</item>
+        <item>《非诚勿扰》的播出时间</item>
+        <item>《天天向上》在那个台播出</item>
+        <item>《我是歌手》的播出信息</item>
+    </string-array>
+    
+    <!--  
+    <string-array name="knowledge_randow_channel">
+        <item>你可以说“%1$s”来切换频道</item>
+        <item>说“%1$s”来调换频道</item>
+        <item>你可以这样跟我说：%1$s</item>
+        <item>试试说“%1$s”跳转频道</item>
+    </string-array>
+    
+    <string-array name="knowledge_randow_channel_content_one">
+        <item>我想看</item>
+        <item>跳到</item>
+        <item>切换到</item>
+        <item></item>
+    </string-array>
+    
+    <string-array name="knowledge_randow_channel_content_two">
+        <item>湖南卫视</item>
+        <item>江苏卫视</item>
+        <item>芒果台</item>
+        <item>浙江卫视</item>
+    </string-array>
+     --> 
+    
+    <string-array name="knowledge_randow_music">
+        <item>你可以说“%1$s”来试听音乐</item>
+        <item>说“%1$s”来播放音乐</item>
+        <item>你可以这样跟我说：%1$s</item>
+        <item>试试说“%1$s”来搜索音乐</item>
+    </string-array>
+    <string-array name="knowledge_randow_music_content_two">
+        <item>播放一首《朋友》</item>
+        <item>我想听刘德华的《忘情水》</item>
+        <item>听张学友的歌</item>
+        <item>放首歌吧</item>
+    </string-array>
+    
+    <string-array name="knowledge_randow_setting">
+        <item>你可以说“增大音量”来调节音量</item>
+        <item>你可以说“减小音量”来调节音量</item>
+        <item>试试说“静音”来关闭声音</item>
+        <item>试试说“取消静音”来取消静音</item>
+    </string-array>
+    
+    <string-array name="knowledge_novoice">
+        <item>没有听到你的声音，请再说一次</item>
+        <item>可能是你的声音太小，请按住语音键大声说出你想要看的视频节目</item>
+        <item>没有听到你的声音，请检查一下遥控器麦克风功能是否正常工作</item>
+    </string-array>
+</resources>

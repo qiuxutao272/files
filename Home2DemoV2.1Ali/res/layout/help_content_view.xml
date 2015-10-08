@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="415.0dip"
+    android:background="@drawable/view_shadow"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_tittle" >
+
+            <cn.yunzhisheng.vui.assistant.tv.view.HelpELinearLayout
+                android:id="@android:id/list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/function_padding_bottom"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="1.0dip"
+        android:layout_height="fill_parent"
+        android:alpha="0.7"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="415.0dip"
+        android:layout_gravity="center"
+        android:background="@drawable/view_content_up"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/imageViewHelpTitle"
+            style="@style/global_record_txt1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/function_video"
+            android:textSize="32.0sp" />
+
+        <TextView
+            android:id="@+id/imageViewHelpContent_one"
+            style="@style/global_record_txt1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="10.0dip"
+            android:text="“我想看《甄嬛传》”"
+            android:textSize="24.0sp" />
+
+        <TextView
+            android:id="@+id/imageViewHelpContent_two"
+            style="@style/global_record_txt1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="5.0dip"
+            android:text="“我想看刘德华的电影”"
+            android:textSize="24.0sp" />
+
+        <TextView
+            android:id="@+id/imageViewHelpContent_three"
+            style="@style/global_record_txt1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="5.0dip"
+            android:text="“我要看综艺节目”"
+            android:textSize="24.0sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/imageViewHelpContent_four"
+            style="@style/global_record_txt1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="5.0dip"
+            android:text="“我要看综艺节目”"
+            android:textSize="24.0sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

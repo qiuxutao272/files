@@ -1,0 +1,169 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Translucent.NoTitleBar">
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:scrollbarThumbHorizontal">@android:color/transparent</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_thumb_vertical_bg</item>
+        <item name="android:scrollbarSize">3dp</item>
+        <!-- 在该Activity中启动其他Activity时的进入者动画 -->
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <!-- 在该Activity中启动其他Activity时的退出者动画 -->
+        <item name="android:activityOpenExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <style name="ProgressBarHorizontalStyle" parent="android:style/Widget.ProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/progress_bar_drawable</item>
+    </style>
+
+    <style name="ProgressBarStockRefresh" parent="android:Widget.ProgressBar">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_stock_refresh</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">3500</item>
+    </style>
+
+    <style name="PopupAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+
+    <style name="GuideDialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+    <style name="MicrophoneVoiceDialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!--  <item name="android:windowBackground">@drawable/dialog_microphone_bg</item>-->
+        <item name="android:windowBackground">@drawable/bk</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    
+    
+    <style name="FunctionShowDialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- <item name="android:windowBackground">@drawable/function_item_more_pannel_background</item> -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    
+    <style name="global_text">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:lineSpacingExtra">2.0dip</item>
+    </style>
+    
+    <!-- vitamio -->
+    <style name="MediaController_SeekBar">
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+        <item name="android:progressDrawable">@drawable/mediacontroller_seekbar</item>
+        <item name="android:thumb">@drawable/mediacontroller_seekbar_thumb</item>
+    </style>
+
+    <style name="MediaController_Text">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    
+    
+    <style name="global_record_txt1">
+        <item name="android:textColor">#F9F9F9</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:lineSpacingExtra">2.0dip</item>
+    </style>
+    
+    <style name="global_record_txt2">
+        <item name="android:textColor">#999999</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:lineSpacingExtra">2.0dip</item>
+    </style>
+    
+    <style name="ProgressBarMusicStyle" parent="android:style/Widget.ProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/seek_drawable</item>
+    </style>
+    
+    <style name="MusicPoPAnimation">
+        <item name="android:windowEnterAnimation">@anim/global_red_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/global_red_scale_out</item>
+    </style>
+    
+    
+    <style name="FloatDialogAnimation" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/global_voice_right_in</item>
+        <item name="android:windowExitAnimation">@anim/global_voice_right_out</item>
+    </style>
+    
+      <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <!-- Application theme. -->
+   
+
+    <style name="Transparent">  
+    <item name="android:windowBackground">
+       @color/transparent_background</item>  
+    <item name="android:windowNoTitle">true</item>  
+    <item name="android:windowIsTranslucent">true</item>    
+    <item name="android:windowAnimationStyle">
+         @android:style/Animation.Translucent</item>  
+  </style>  
+    <style name="lefttabtoptext">
+	    <item name="android:textSize">25sp</item>
+	    <item name="android:layout_width">100dp</item>
+	    <item name="android:layout_height">42dp</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:padding">0dp</item>
+	</style>
+	<style name="lefttabtext">
+	    <item name="android:textSize">25sp</item>
+	    <item name="android:layout_width">150dp</item>
+	    <item name="android:layout_height">45dp</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:padding">0dp</item>
+	</style>
+	<style name="itemtext">
+	    <item name="android:textSize">24sp</item>
+	    <item name="android:gravity">left|bottom</item>
+	    <item name="android:paddingLeft">10dp</item>
+	    <item name="android:paddingRight">10dp</item>
+	    <item name="android:paddingBottom">10dp</item>
+	    <item name="android:textColor">@android:color/white</item>
+	    <item name="android:singleLine">true</item>
+	    <item name="android:ellipsize">marquee</item>
+	</style>
+</resources>

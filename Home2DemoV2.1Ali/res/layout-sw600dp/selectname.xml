@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop_bk"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="67dip"
+        android:layout_gravity="center" >
+
+        <TextView
+            style="@style/global_record_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="给这台电视选择一个名字"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_marginLeft="21dip"
+        android:layout_marginRight="21dip"
+        android:background="@drawable/horizontal_divider" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="223dip"
+        android:layout_marginLeft="21dip"
+        android:layout_marginRight="21dip"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/horizontal_divider"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:listSelector="@drawable/list_item_mid_bg"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollingCache="true" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="53dip"
+        android:orientation="horizontal"
+        android:paddingLeft="21dip"
+        android:paddingRight="21dip" >
+
+        <TextView
+            style="@style/global_record_txt2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="@string/select_name_ok"
+            android:textSize="17sp" />
+
+        <TextView
+            style="@style/global_record_txt2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="@string/select_name_back"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

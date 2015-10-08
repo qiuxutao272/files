@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/view_shadow"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_content_up"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            style="@style/global_record_txt1"
+            android:layout_width="fill_parent"
+            android:layout_height="56dip"
+            android:gravity="center|bottom"
+            android:text="正在搜索歌曲"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imageViewBuffering"
+            android:layout_width="fill_parent"
+            android:layout_height="80dip"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/tts_status_buffering" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:alpha="0.7"
+        android:background="@color/black" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_bottom" >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/list_item_down_bg"
+            android:text="@string/cancel"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</LinearLayout>

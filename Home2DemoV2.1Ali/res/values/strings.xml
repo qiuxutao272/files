@@ -1,0 +1,560 @@
+﻿<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+      <string name="app_name">阿里智慧模块化二代桌面</string>
+      <string name="exit_app">再按一下返回键退出阿里智慧模块化二代桌面</string>
+      <string name="hello_world">Hello world!</string>
+    <string name="function_video">视频搜索</string>
+    <string name="function_app">应用管理</string>
+    <string name="function_tv">电视节目</string>
+    <string name="function_music">音乐搜索</string>
+    <string name="function_movie">电影资讯</string>
+    <string name="function_weather">查看天气</string>
+    <string name="function_weibo">微博分享</string>
+    <string name="function_sitemap">网站搜索</string>
+    <string name="function_news">新闻搜索</string>
+    <string name="function_settings">电视设置</string>
+    <string name="function_stock">股票查询</string>
+    <string name="function_search">搜索引擎</string>
+    <string name="function_train">查火车票</string>
+    <string name="function_flight">查询航班</string>
+    <string name="function_cookbook">烹饪菜谱</string>
+    <string name="function_novel">烹饪菜谱</string>
+    <string name="function_talk">聊天笑话</string>
+    
+    <string name="function_channel_switch">频道切换</string>
+    <string name="function_shop">快捷购物</string>
+    <string name="function_help">其它功能</string>
+    
+    <string name="function_mobile">手机遥控器</string>
+    
+    <string name="weather_answer">为您查找到%s的天气：</string>
+    <string name="stock_answer">为您查找到%s的股票信息：</string>
+    <string name="clear">清空</string>
+
+    <string name="china_mobile">中国移动</string>
+    <string name="china_unicom">中国联通</string>
+    <string name="china_telecom">中国电信</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="send">发送</string>
+    <string name="prompt">提示</string>
+    <string name="failed">失败</string>
+    <string name="fetching_data">获取数据中,请稍后</string>
+    <string name="day_after_tomorrow">后天</string>
+    <string name="three_days_later_tv">大后天</string>
+    <string name="tomorrow">明天</string>
+    <string name="today">今天</string>
+    <string name="yesterday">昨天</string>
+    <string name="day_before_yesterday">前天</string>
+    <string name="load_more">显示更多…</string>
+    <string name="dianping_provide">大众点评dianping.com</string>
+    <string name="download">下载</string>
+    <string name="downloading">下载中…</string>
+    <string name="offline_tts_download">离线播报引擎包下载</string>
+    <string name="offline_tts_download_content">离线播报服务能够帮助您节省流量，带来更好的使用体验，请点击下载离线语音包。</string>
+    <string name="offline_tts_file_not_found">出错了，离线语音播报文件无法找到，请重新下载</string>
+    <string name="contact_format">姓名：%1$s\n号码：%2$s</string>
+    <string name="poi_geo_null">很抱歉，该地点没有位置，无法为您打开地图</string>
+    <string name="forward_sms_answer">转发%1$s的信息</string>
+    <string name="send_sms_answer">给%1$s的%2$s号码发短信</string>
+    <string name="switch_offline_tts">切换为离线语音播报</string>
+    <string name="switch_online_tts">切换为在线语音播报</string>
+    <string name="online_tts">在线语音播报</string>
+    <string name="offline_tts">离线语音播报</string>
+    <string name="tts_engine_choose">语音播报引擎选择</string>
+    <string name="view_source_web">查看网页</string>
+
+    <!-- talk -->
+    <string name="talk_network_exception">没有找到可用的网络，您可以检查一下网络设置</string>
+    <string name="talk_server_exception">好像网络不给力哦，要不您一会儿再试一下？</string>
+    <string name="talk_communication_err">网络出了点状况，请稍候再试一下</string>
+    <string name="talk_network_outtime">当前网络有点繁忙，请过会再试</string>
+
+    <!-- Stock -->
+    <string name="stock_query_empty">很抱歉，股票代码或者交易所名称为空，无法为您查询股票信息</string>
+
+    <!-- Memo -->
+    <string name="memo">提醒</string>
+    <string name="memo_list">提醒列表</string>
+    <string name="to_do">待办</string>
+    <string name="completed">已完成</string>
+    <string name="close">关闭</string>
+    <string name="missed_reminder_during_shutdown">不要忘记这些提醒哦：%s</string>
+    <string name="missed_reminder">错过的提醒</string>
+    <string name="reminder">提醒</string>
+    <string name="memo_date_format">日期：%s</string>
+    <string name="memo_time_format">时间：%s</string>
+    <string name="memo_tostring_format">%1$s提醒您%2$s</string>
+    <string name="delete_memo_prompt">确定删除吗？</string>
+    <string name="memo_time_length_prompt_dd_hh_mm">%1$s天%2$s小时%3$s分钟</string>
+    <string name="memo_time_length_prompt_hh_mm">%1$s小时%2$s分钟</string>
+    <string name="memo_time_length_prompt_mm_ss">%1$s\'%2$s\"</string>
+    <string name="register_reminder_prompt">%s后提示</string>
+    <string name="edit_datetime">编辑时间</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="memo_due_time_earlier_than_now">提醒时间早于现在哦</string>
+    <string name="readable_time_yesterday">（昨天）</string>
+    <string name="readable_time_day_before_yesterday">（前天）</string>
+    <string name="readable_time_day_after_tomorrow">（后天）</string>
+    <string name="readable_time_today">（今天）</string>
+    <string name="readable_time_tomorrow">（明天）</string>
+    <string name="three_days_later">（三天后）</string>
+    <string name="four_days_later">（四天后）</string>
+    <string name="five_days_later">（五天后）</string>
+    <string name="six_days_later">（六天后）</string>
+    <string name="seven_days_later">（七天后）</string>
+    <string name="future">（未来）</string>
+
+    <!-- Map -->
+    <string name="locating">正在定位中，请稍候…</string>
+    <string name="open_map">打开地图</string>
+
+    <!-- Nearby -->
+    <string name="geo_reverse">解析地址中…</string>
+    <string name="locate_failed">很抱歉，获取当前位置失败，无法提供查询服务</string>
+    <string name="current_city">当前城市</string>
+    <string name="current_position">当前位置</string>
+
+    <!-- Weibo -->
+    <string name="sina_weibo">新浪微博</string>
+    <string name="tecent_weibo">腾讯微博</string>
+    <string name="renren_weibo">人人新鲜事</string>
+
+    <!-- Call -->
+    <string name="unknown">未知</string>
+    <string name="call_ok">立即拨打</string>
+    <string name="call_cancel">取\t\t消</string>
+
+    <!-- Search -->
+    <string name="music_url_empty">很抱歉，歌曲地址无法获取</string>
+
+    <!-- Music -->
+    <string name="music_search_result">共为您找到%s首相关歌曲，点击查看</string>
+
+    <!-- Route -->
+    <string name="start_poi">起点：</string>
+    <string name="end_poi">终点：</string>
+    <string name="poi_data_empty">很抱歉，路线起点和终点数据为空，无法为您查找路线。</string>
+    <string name="route_searching">查找路线中，请稍候&#8230;</string>
+    <string name="bus_route_city_unequal">起止城市不相同，无法为您查询公交路线。</string>
+    <string name="geo_reversing">解析位置中，请稍候&#8230;</string>
+    <string name="geo_reverse_failed">很抱歉，解析位置失败</string>
+    <string name="no_route_found">很抱歉，没有查找到路线</string>
+    <string name="retry">重试</string>
+
+    <!-- Train -->
+    <string name="tarin_query_prompt_format">已为您查询到%1$s到%2$s的火车</string>
+
+    <!-- Flight -->
+    <string name="flight_query_prompt_format">已为您查询到 %1$s%2$s到%3$s的航班</string>
+
+    <!-- Poi -->
+    <string name="start_from_here">从这里出发</string>
+    <string name="go_to_here">到这里去</string>
+    <string name="save">保存</string>
+    <string name="forwarding">转发</string>
+    <string name="more">更多</string>
+    <string name="geocode_prompt">解析地址中</string>
+    <string name="geocode_failed">很抱歉，无法解析地址</string>
+    <string name="address">地址：</string>
+    <string name="phone">电话：</string>
+    <string name="left_parentheses">（</string>
+    <string name="right_parentheses">）</string>
+
+    <!-- Preference -->
+    <string name="preference_version">版本号</string>
+    <string name="preference_about">关于</string>
+    <string name="preference_general_setting">通用设置</string>
+    <string name="preference_feedback">反馈意见</string>
+    <string name="preference_feedback_tip">每条建议都能帮助我们做的更好</string>
+    <string name="preference_check_new_version">检查新版本</string>
+    <string name="preference_check_new_version_tip">点击检查是否有新版本</string>
+    <string name="lastest_version">当前已是最新版本</string>
+
+    <!-- Preference UserPreference -->
+    <string name="PreferenceSettingCommon">通用设置</string>
+    <string name="PreferenceSettingTTS">网络TTS开关</string>
+    <string name="PreferenceOpenTTS">已打开TTS功能</string>
+    <string name="PreferenceCloseTTS">已关闭TTS功能</string>
+    <string name="PreferenceSettingAnimation">首页动画效果开关</string>
+    <string name="PreferenceOpenAnimation">已打开动画功能</string>
+    <string name="PreferenceCloseAnimation">已关闭动画功能</string>
+    <string name="PreferenceSettingASRServer">ASR服务器选择:</string>
+    <string name="PreferenceASRServer">ASR服务器</string>
+    <string name="PreferenceSettingAutoOpenMic">启动后自动开始录音</string>
+    <string name="PreferenceAutoOpenMic">启动语音助手后将自动开始录音</string>
+    <string name="PreferenceClickOpenMic">启动语音助手后需要点击按钮开始录音</string>
+    <string name="PreferenceChangeBackground">更换主题</string>
+    <string name="PreferenceClickToChangeBackground">点击更换主题背景</string>
+    <string name="PreferenceSelectBackground">选择背景图</string>
+    <string name="PreferenceTitleCheckNewVersion">检查新版本</string>
+    <string name="PreferenceSummaryCheckNewVersion">点击检查是否有新版本</string>
+    <string name="CurrentIsLastestVersion">当前已是最新版本</string>
+    <!-- component -->
+
+
+    <!-- 关于 -->
+    <string name="company">北京云知声信息技术有限公司</string>
+    <string name="about_version">版本: %1$s</string>
+    <string name="about_author">作者: 北京云知声信息技术有限公司</string>
+    <string name="about_content_line2">打电话时搜索联系人很麻烦？用键盘发短信、发微博太繁琐？ \n云知声语音助手来帮助你解决这些问题。\n</string>
+    <string name="about_content_line3">【产品特点】\n
+	    1、微博利器，随时随地，用语音发布微博 \n
+	    2、打电话、发短信，简单方便  \n
+	    3、天气查询、打开应用、搜索内容 \n
+	    4、完美普通话支持，语音无处不在 \n
+	    5、更多功能正在火速搭建中 \n	</string>
+    <string name="about_content_line4">【产品反馈】\n
+	    欢迎大家@云知声，反馈您宝贵的意见 \n
+	    我们会做得更好！ \n
+	    \n
+	    新浪微博：\nhttp://e.weibo.com/bjyzs \n
+	    官方邮箱：ishuoshuo@yunzhisheng.cn \n
+	    商务邮箱：support@yunzhisheng.cn \n
+	    官方QQ：1172977637 \n
+	    官方QQ群：145167715 \n	</string>
+    <string name="about_content_line5">【免责申明】\n
+	    1、云知声语音助手的内容来自于互联网及用户自主分享，所有内容并不反映爱说说任何意见及观点 \n
+	    2、如果云知声语音助手的内容有侵犯到您的权益，请立即与我们联系，我们将在第一时间对内容进行处理 \n	</string>
+    <string name="about_copyright_line1">Copyright© 2012 YunZhiSheng Inc.</string>
+    <string name="about_copyright_line2">All rights reserved.</string>
+    <!-- 友盟 -->
+    <!-- 自动更新 -->
+    <string name="UMBreak_Network">更新失败，请检查是否接入网络。</string>
+    <string name="UMUpdateTitle">应用有新版本更新</string>
+    <string name="UMNewVersion">最新版本: </string>
+    <string name="UMGprsCondition">提示：当前不是Wifi网络，通过移动网络将耗费一定的流量。</string>
+    <string name="UMUpdateNow">立即更新</string>
+    <string name="UMAppUpdate">应用更新</string>
+    <string name="UMNotNow">以后再说</string>
+    <string name="UMToast_IsUpdating">正在更新中…</string>
+    <string name="UMDialog_InstallAPK">最新版本下载完成，现在安装吗?</string>
+    <!-- 用户反馈 -->
+    <string name="UMEmptyFbNotAllowed">请输入你的反馈内容</string>
+    <string name="UMContentTooLong">超过140字了，再简短一些吧</string>
+    <string name="UMFbList_ListItem_State_ReSend">失败，轻触以重发</string>
+    <string name="UMFbList_ListItem_State_Sending">发送中…</string>
+    <string name="UMFbList_ListItem_State_Fail">发送失败</string>
+    <string name="UMFb_Atom_State_Fail">发送失败</string>
+    <string name="UMFb_Atom_State_Sending">发送中…</string>
+    <string name="UMFb_Atom_State_Resend">发送失败，轻触以重发</string>
+    <string name="UMFbList_ListItem_State_Resending">重发</string>
+    <string name="UMFeedbackUmengTitle">反馈意见</string>
+    <string name="UMFeedbackListTitle">我的反馈</string>
+    <string name="UMFeedbackConversationTitle">反馈问题</string>
+    <string name="UMFeedbackTitle">每条建议都将帮助我们做得更好</string>
+    <string name="UMFeedbackContent">请输入您的反馈意见</string>
+    <string name="UMFeedbackSummit">提交</string>
+    <string name="UMFeedbackGoBack">返回</string>
+    <string name="UMFeedbackGotIt">知道了</string>
+    <string name="UMFeedbackSeeDetail">去看看</string>
+
+    <string-array name="UMageList">
+        <item>年龄</item>
+        <item>18岁以下</item>
+        <item>18–24岁</item>
+        <item>25–30岁</item>
+        <item>31–35岁</item>
+        <item>36–40岁</item>
+        <item>41–50岁</item>
+        <item>51–59岁</item>
+        <item>60岁及以上</item>
+    </string-array>
+    <string-array name="UMgenderList">
+        <item>性别</item>
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string name="UMViewThread">查看反馈</string>
+    <string name="UMNewReplyAlertTitle">您的反馈收到了回复</string>
+    <string name="UMDeleteThread">删除反馈</string>
+    <string name="UMViewFeedback">查看反馈</string>
+    <string name="UMDeleteFeedback">删除反馈</string>
+    <string name="UMResendFeedback">重发反馈</string>
+    <string name="UMDeleteMsg">删除信息</string>
+    <string name="UMNewReplyFlick">有新的回复</string>
+    <string name="UMNewReplyTitle">有新的回复</string>
+    <string name="UMNewReplyHint">点击查看</string>
+    <string name="smsMessageQueued">当前无法发送信息，将在服务恢复后发送</string>
+    <string name="smsMessageSent">消息已发送</string>
+
+    <!-- 2013.03.07 amend by shichao for setting activity -->
+    <string name="copy_sd_title">复制数据到SD卡</string>
+    <string name="copy_sd_summary">点击拷贝数据库和所有应用名文档</string>
+    <string name="headset_mode">耳机模式</string>
+    <string name="headset_mode_on">允许使用线控</string>
+    <string name="headset_mode_off">禁用线控</string>
+    <string name="bluetooth_mode">蓝牙模式</string>
+    <string name="bluetooth_mode_on">蓝牙模式已打开</string>
+    <string name="bluetooth_mode_off">蓝牙模式已关闭</string>
+    <string name="speech_category_title">语音播报设置</string>
+    <string name="speech_orientation_stop_title">屏幕翻转停止播报</string>
+    <string name="speech_orientation_summary_on">屏幕翻转时，停止语音播报</string>
+    <string name="speech_orientation_summary_off">屏幕翻转停止播报已停用</string>
+    <string name="speech_tele_title">来电播报</string>
+    <string name="speech_tele_summary_on">播报联系人姓名或者电话号码</string>
+    <string name="speech_tele_summary_off">来电播报已停用</string>
+    <string name="speech_sms_title">短信播报</string>
+    <string name="speech_sms_summary_on">将会播报联系人或者短信内容</string>
+    <string name="speech_sms_summary_off">短信播报已停用</string>
+    <string name="speech_sms_contact_title">播报短信联系人</string>
+    <string name="speech_sms_contact_summary_on">当短信播报时，会播报联系人</string>
+    <string name="speech_sms_contact_summary_off">不要播报联系人</string>
+    <string name="speech_sms_content_title">播报短信内容</string>
+    <string name="speech_sms_content_summary_on">当短信播报时，会播报短信内容</string>
+    <string name="speech_sms_content_summary_off">不要播报短信内容</string>
+    <string name="other_setting">其他设置</string>
+
+    <!-- 2013.03.11 added by shichao for tv_recomm -->
+    <string name="tv_recomm_channel">频道</string>
+    <string name="tv_recomm_time">时间</string>
+    <string name="tv_recomm_detail">详情</string>
+    <string name="no_recommend_programme">没有具体信息</string>
+    <string name="tv_recommend_title">热门电视节目推荐</string>
+    <string name="tv_recommend_no_recomm">没有热门电视节目推荐</string>
+    <string name="mobile_type">移动</string>
+    <string name="unicom_type">联通</string>
+    <string name="telecom_type">电信</string>
+
+    <!-- 2013.03.21 add by shichao for notify user no speech when phone in slice or vibrate mode -->
+    <string name="toast_for_speech_call">系统模式设置为静音或震动时将不进行播报</string>
+    <string name="delete_sms_notice_title">提示</string>
+    <string name="delete_sms_notice">确认要删除这条短信吗？</string>
+    <string name="delete_sms_confirm">确认</string>
+    <string name="delete_sms_cancel">取消</string>
+    <string name="freetext">松手停止录音</string>
+    <string name="voiceshowtext">按住语音键，进行语音输入</string>
+    <string name="voice_recognising">正在获取结果中...</string>
+    <string name="voice_release">大声说片名，快速搜索</string>
+    <string name="voice_moveup">松开手指,取消发送</string>
+    <string name="voice_unrecognised">无法识别，请重试</string>
+    <string name="voice_recording_init">正在准备...</string>
+    <string name="voice_init_failed">初始化失败</string>
+    <string name="voice_no">没有听到声音，请重试</string>
+    <string name="voice_too_short_title">操作提示</string>
+    <string name="voice_too_short">录音时间太短，请重试</string>
+    <string name="voice_no_network">网络连接失败，语音识别需要联网，请检查网络</string>
+    <string name="voice_check_network">检查网络</string>
+    <string name="voice_cancel">取消</string>
+    <string name="voice_ok">确定</string>
+    <string name="voice_retry">请再试一次…</string>
+    <string name="voice_not_support">抱歉，暂不支持您刚才说的话，您可以说“播放 打开 搜索”</string>
+    <string name="voice_waiting">按住  语音键  说话</string>
+    
+
+    <!-- update by liangzifeng -->
+    
+    <string name="key_setting">按键设置</string>
+    <string name="key_tip_voice">请按语音键</string>
+    <string name="key_tip_up">请按上方向键</string>
+    <string name="key_tip_down">请按下方向键</string>
+    <string name="key_tip_left">请按左方向键</string>
+    <string name="key_tip_right">请按右方向键</string>
+    <string name="key_tip_center">请按确定键</string>
+    <string name="key_not_set">--按键未设置--</string>
+    
+    <string name="skip_set">没有语音键？点此跳过设置</string>
+    
+    
+    <string name="global_pop_text1">您可以这样说</string>
+    <string name="global_pop_text2">“我要看《速度与激情》”</string>
+    <string name="global_pop_text3">“上海天气”</string>
+    <string name="global_pop_text4">“你有什么功能”</string>
+    
+    
+    
+    <!-- vitamio -->
+     <string name="vitamio_init_decoders">Initializing decoders…</string>
+    <string name="vitamio_videoview_error_title">Cannot play video</string>
+    <string name="vitamio_videoview_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to
+		this device.</string>
+    <string name="vitamio_videoview_error_text_unknown">Sorry, this video cannot be played.</string>
+    <string name="vitamio_videoview_error_button">OK</string>
+    <string name="mediacontroller_play_pause">Play/Pause</string>
+    
+    <string name="tv_other_errorAnswer">抱歉，不支持此操作</string>
+    <string name="channel_errorAnswer">该电视不支持频道切换</string>
+    <string name="call_errorAnswer">该电视不支持打电话</string>
+    
+    <string name="sms_errorAnswer">该电视不支持短信功能</string>
+    <string name="contact_errorAnswer">没有找到联系人信息</string>
+    <string name="setting_errorAnswer">本电视不支持改操作</string>
+    <string name="reminder_errorAnswer">该电视不支持提醒功能</string>
+    <string name="alarm_errorAnswer">该电视不支持闹钟功能</string>
+    <string name="note_errorAnswer">该电视不支持备忘录功能</string>
+    
+    <string name="weibo_errorAnswer">该电视不支持微博分享功能</string>
+    <string name="appmgr_errorAnswer">该电视不支持应用管理功能</string>
+    <string name="website_errorAnswer">该电视不支持网站导航功能</string>
+    <string name="calendar_errorAnswer">该电视不支持日历功能</string>
+    <string name="weather_errorAnswer">该电视不支持天气查询</string>
+    
+    
+    <string name="stock_errorAnswer">抱歉，不支持股票查询功能</string>
+    <string name="cookbook_errorAnswer">抱歉，不支持菜谱功能</string>
+    <string name="websearch_errorAnswer">不支持搜索功能</string>
+    <string name="localsearch_errorAnswer">该电视不支持定位搜索功能</string>
+    <string name="map_errorAnswer">该电视不支持定位和搜索功能</string>
+    <string name="train_errorAnswer">抱歉，不支持火车票信息查询</string>
+    <string name="flight_errorAnswer">抱歉，不支持航班信息查询</string>
+    <string name="translation_errorAnswer">抱歉，不支持翻译功能</string>
+    
+    <string name="news_errorAnswer">抱歉，不支持新闻查阅功能</string>
+    <string name="video_errorAnswer">该电视不支持视频搜索功能</string>
+    <string name="music_errorAnswer">该电视不支持音乐搜索功能</string>
+    <string name="movie_errorAnswer">抱歉，不支持电影资讯查询</string>
+    <string name="tv_errorAnswer">该电视不支持电视节目查询</string>
+    <string name="novel_errorAnswer">抱歉，不支持小说查询</string>
+    <string name="hotel_errorAnswer">抱歉，不支持酒店查询功能</string>
+    <string name="hotline_errorAnswer">抱歉，不支持此功能</string>
+    <string name="server_errorAnswer">貌似网络状况不是很好，请稍后再试</string>
+    <string name="more_help_answer">，更多功能请按下列指示说出命令</string>
+    <string name="select_name_ok">按“确定”键选择</string>
+     <string name="select_name_back">按“返回”键取消</string>
+     <string name="listen_errorAnswer">抱歉，没听清楚，请再说一遍</string>
+    <string name="action_settings">Settings</string>
+ 	<string name="filter">筛选</string>
+ 	<string name="search">搜索</string>
+ 	<string name="tab1">热门推荐</string>
+ 	<string name="tab2">本周新增</string>
+ 	<string name="tab3">原先大片</string>
+ 	<string name="tab4">杜比电影</string>
+ 	<string name="tab5">欧美大片</string>
+ 	<string name="tab6">喜剧幽默</string>
+ 	<string name="tab7">文艺剧情</string>
+ 	<string-array name="movietab">
+ 	    <item>热门推荐</item>
+ 	    <item>本周新增</item>
+ 	    <item>院线大片</item>
+ 	    <item>杜比电影</item>
+ 	    <item>欧美大片</item>
+ 	    <item>喜剧幽默</item>
+ 	    <item>文艺剧情</item>
+ 	</string-array>
+ 	<string-array name="movietext">
+ 	    <item>疯狂原始人</item>
+ 	    <item>丛林大反攻2</item>
+ 	    <item>深夜前的五分钟</item>
+ 	    <item>魔界三部曲：王者再临</item>
+ 	</string-array>
+ 	<string-array name="tvtab">
+ 	 	<item>热门推荐</item>
+ 	    <item>同步追剧</item>
+ 	    <item>内地热播</item>
+ 	    <item>日韩专区</item>
+ 	    <item>港台剧场</item>
+ 	    <item>家庭情感</item>
+ 	    <item>古装武侠</item>
+ 	</string-array>
+ 	<string-array name="tvtext">
+ 	    <item>花红花火</item>
+ 	    <item>错伏</item>
+ 	    <item>老农民</item>
+ 	    <item>金玉良缘</item>
+ 	</string-array>
+ 	<string-array name="shimentab">
+ 	 	<item>热门推荐</item>
+ 	    <item>最新上线</item>
+ 	    <item>动作科幻</item>
+ 	    <item>文艺剧情</item>
+ 	    <item>青春喜剧</item>
+ 	    <item>恐怖惊悚</item>
+ 	    <item>花絮预告</item>
+ 	</string-array>
+ 	<string-array name="shimentext">
+ 	    <item>暮光之城3</item>
+ 	    <item>我最好朋友的女朋友</item>
+ 	    <item>尼斯湖事件</item>
+ 	    <item>行骗天下</item>
+ 	</string-array>
+ 	<string-array name="zongyitab">
+ 	 	<item>热门推荐</item>
+ 	    <item>强档热播</item>
+ 	    <item>最新综艺</item>
+ 	    <item>两性情感</item>
+ 	    <item>幽默搞笑</item>
+ 	    <item>明星选秀</item>
+ 	    <item>访谈对话</item>
+ 	</string-array>
+ 	<string-array name="zongyitext">
+ 	    <item>东方卫视春晚</item>
+ 	    <item>乐享夏威夷</item>
+ 	    <item>央视春晚</item>
+ 	    <item>女神的新衣</item>
+ 	</string-array>
+ 	<string-array name="qiusuotab">
+ 	 	<item>热门推荐</item>
+ 	    <item>最新上线</item>
+ 	    <item>探索记录</item>
+ 	    <item>人文生活</item>
+ 	    <item>科学空间</item>
+ 	    <item>动物星球</item>
+ 	    <item>全部节目</item>
+ 	</string-array>
+ 	<string-array name="qiusuotext">
+ 	    <item>赛车的嘶吼</item>
+ 	    <item>沙漠车王</item>
+ 	    <item>保住一命</item>
+ 	    <item>史前世界</item>
+ 	</string-array>
+ 	 <string-array name="languangtab">
+ 	 	 <item>热门推荐</item>
+ 	    <item>本周新增</item>
+ 	    <item>院线大片</item>
+ 	    <item>杜比电影</item>
+ 	    <item>欧美大片</item>
+ 	    <item>喜剧幽默</item>
+ 	    <item>文艺剧情</item>
+ 	</string-array>
+ 	<string-array name="languangtext">
+ 	    <item>白雪公主之魔镜魔镜</item>
+ 	    <item>冰封：重生之门</item>
+ 	    <item>大上海</item>
+ 	    <item>大雄兔</item>
+ 	    <item>盗梦空间</item>
+ 	    <item>非诚勿扰2</item>
+ 	    <item>绿灯侠</item>
+ 	    <item>魔界三部曲：王者再临</item>
+ 	    <item>天机·富春山居图</item>
+ 	    <item>星尘</item>
+ 	</string-array>
+ 	 <string-array name="shaoertab">
+ 	 	<item>热门推荐</item>
+ 	    <item>1-6岁</item>
+ 	    <item>7-13岁</item>
+ 	    <item>少儿电影</item>
+ 	    <item>精彩动画</item>
+ 	    <item>天天电视</item>
+ 	    <item>亲子综艺</item>
+ 	</string-array>
+ 	<string-array name="shaoertext">
+ 	    <item>星际飚车王</item>
+ 	    <item>小小羊提米</item>
+ 	    <item>巧虎来啦</item>
+ 	    <item>火力少年王</item>
+ 	</string-array>
+ 	<string name="education">教育</string>
+ 	<string name="gamehome">游戏大厅</string>
+ 	<string name="app_center">应用中心</string>
+ 	<string name="shop">购物</string>
+ 	<string name="music_xm">虾米音乐</string>
+ 	<string name="film2">游戏大厅</string>
+ 	<string name="film">电影</string>
+ 	<string name="tv">电视剧</string>
+ 	<string name="shimen">狮门影视</string>
+ 	<string name="zongyi">综艺</string>
+ 	<string name="qiusuo">求索</string>
+ 	<string name="languang">私人定制影院</string>
+ 	<string name="shaoer">少儿</string>
+ 	<string name="youwant">推荐</string>
+ 	<string name="filmdetailtitle">白日梦想家</string>
+ 	<string name="filmdetailtitle1">新济公活佛</string>
+ 	<string name="filmdetailtitle2">轮滑女郎</string>
+ 	<string name="filmdetailtitle3">快乐大本营</string>
+ 	<string name="filmdetailtitle4">史前世界</string>
+ 	<string name="filmdetailtitle5">听风者</string>
+ 	<string name="filmdetailtitle6">智慧树</string>
+    
+</resources>

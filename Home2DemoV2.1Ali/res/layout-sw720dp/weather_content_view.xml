@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_content_all_bk"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTodayWeather"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="20.0dip" >
+
+            <TextView
+                android:id="@+id/textViewWeatherCity"
+                style="@style/global_record_txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="北京"
+                android:textSize="32.0sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textViewWeatherFirstDayWeather"
+                    style="@style/global_record_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="雷阵雨"
+                    android:textSize="24.0sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10.0dip" >
+
+                    <TextView
+                        android:id="@+id/textViewWeatherFirstDayWind"
+                        style="@style/global_record_txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingTop="3.0dip"
+                        android:text="无持续风向"
+                        android:textSize="20.0sp" />
+
+                    <TextView
+                        android:id="@+id/textViewWeatherFirstDayPmName"
+                        style="@style/global_record_txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10.0dip"
+                        android:paddingTop="3.0dip"
+                        android:text="PM2.5:"
+                        android:textSize="20.0sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textViewWeatherFirstDayPm"
+                        style="@style/global_record_txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="3.0dip"
+                        android:text="500"
+                        android:textSize="20.0sp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/imageViewWeatherFirstDayPm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10.0dip"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/pm_2_5_1"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textViewWeatherFirstDayMaxTemperature"
+                        style="@style/global_record_txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="19℃"
+                        android:textSize="20.0sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        style="@style/global_record_txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/"
+                        android:textSize="20.0sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textViewWeatherFirstDayMinTemperature"
+                        style="@style/global_record_txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9℃"
+                        android:textSize="20.0sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textViewWeatherFirstDayTemperature"
+                    style="@style/global_record_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="2-9"
+                    android:textSize="48.0sp" />
+
+                <TextView
+                    style="@style/global_record_txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="10.0dip"
+                    android:text="℃"
+                    android:textSize="32.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/divider" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutOtherDaysWeather"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutSecondDay"
+                android:layout_width="fill_parent"
+                android:layout_height="64.0dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="32.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textViewWeatherSecondDayDatetime"
+                        style="@style/global_record_txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="星期四"
+                        android:textSize="24.0sp" />
+
+                    <TextView
+                        style="@style/global_record_txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="(今天)"
+                        android:textSize="20.0sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageViewWeatherSecondDayWeather"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_weather_big_rainstorm_big" />
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="32.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textViewWeatherSecondDayTemperature"
+                        style="@style/global_record_txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="11~16"
+                        android:textSize="24.0sp" />
+
+                    <TextView
+                        style="@style/global_record_txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5.0dip"
+                        android:text="℃"
+                        android:textSize="24.0sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewWeatherSecondDayWeather"
+                    style="@style/global_record_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="雷阵雨"
+                    android:textSize="24.0sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <include layout="@layout/divider" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutThirdDay"
+                android:layout_width="fill_parent"
+                android:layout_height="64.0dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textViewWeatherThirdDayDatetime"
+                    style="@style/global_record_txt1"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="32.0dip"
+                    android:layout_weight="1.0"
+                    android:text="星期五"
+                    android:textSize="24.0sp" />
+
+                <ImageView
+                    android:id="@+id/imageViewWeatherThirdDayWeather"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_weather_cloudy_big" />
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="32.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textViewWeatherThirdDayTemperature"
+                        style="@style/global_record_txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="11~16"
+                        android:textSize="24.0sp" />
+
+                    <TextView
+                        style="@style/global_record_txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5.0dip"
+                        android:text="℃"
+                        android:textSize="24.0sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewWeatherThirdDayWeather"
+                    style="@style/global_record_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="多云转晴"
+                    android:textSize="24.0sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <include layout="@layout/divider" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutFouthDay"
+                android:layout_width="fill_parent"
+                android:layout_height="64.0dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textViewWeatherFouthDayDatetime"
+                    style="@style/global_record_txt1"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="32.0dip"
+                    android:layout_weight="1.0"
+                    android:text="星期六"
+                    android:textSize="24.0sp" />
+
+                <ImageView
+                    android:id="@+id/imageViewWeatherFouthDayWeather"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_weather_heavy_snow_big" />
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="32.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textViewWeatherFouthDayTemperature"
+                        style="@style/global_record_txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="11~16"
+                        android:textSize="24.0sp" />
+
+                    <TextView
+                        style="@style/global_record_txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5.0dip"
+                        android:text="℃"
+                        android:textSize="24.0sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewWeatherFouthDayWeather"
+                    style="@style/global_record_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="雷阵雨"
+                    android:textSize="24.0sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <include
+                layout="@layout/divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutFifthDay"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="5.0dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textViewWeatherFifthDayDatetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="星期日"
+                    android:textColor="@color/light_grey"
+                    android:textSize="20.0sp" />
+
+                <ImageView
+                    android:id="@+id/imageViewWeatherFifthDayWeather"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_weather_hail_big" />
+
+                <TextView
+                    android:id="@+id/textViewWeatherFifthDayTemperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11~16℃"
+                    android:textColor="@color/light_grey"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/textViewWeatherFifthDayWeather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="雷阵雨"
+                    android:textColor="@color/light_grey"
+                    android:textSize="20.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

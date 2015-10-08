@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/view_shadow"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/view_content_up">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="64dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="32dip"
+            android:paddingRight="10dp" >
+
+            <ImageView
+            android:id="@+id/ic_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_view_sina" />
+            
+            <TextView
+                android:id="@+id/textViewWeibo"
+                android:paddingLeft="10dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="新浪微博"
+                style="@style/global_record_txt1"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="32dip"
+            android:paddingRight="32dip"
+            android:paddingBottom="16dip"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/editTextWeiboInput"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请按住麦克风说出发送的内容"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:background="@drawable/view_text_bk"
+                android:editable="false"
+                android:ems="10"
+                android:fadingEdge="vertical"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:lineSpacingExtra="3dp"
+                android:lineSpacingMultiplier="1.4"
+                android:minLines="4"
+                android:maxLines="4"
+                android:maxLength="140"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:textColor="@color/global_record"
+                android:textSize="24sp" >
+            </EditText>
+			</LinearLayout>
+			
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dip"
+            android:paddingLeft="32dip"
+            android:paddingRight="32dip" >
+            
+            
+            <TextView
+                android:id="@+id/textViewWeiboContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_toLeftOf="@+id/editTextWeiboContentLength"              
+				android:text="可输入字符数:"
+				style="@style/global_record_txt2"
+				android:gravity="center_vertical"
+                android:textSize="20sp" />
+            
+
+            <TextView
+                android:id="@+id/editTextWeiboContentLength"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"                
+				android:text="140"
+				style="@style/global_record_txt1"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:alpha="0.7"
+        android:background="@color/black" />
+    
+    <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_bottom" >
+
+                <Button
+                    android:id="@+id/btnSendWeibo"
+                    style="@style/global_record_txt1"
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:background="@drawable/list_item_down_bg"
+                    android:text="@string/send"
+                    android:textSize="24sp" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/horizontal_divider"
+                    android:focusable="false" />
+
+                <Button
+                    android:id="@+id/btnClearWeiboContent"
+                    style="@style/global_record_txt1"
+                    android:layout_width="1dp"
+                    android:layout_height="64dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/list_item_down_bg"
+                    android:text="@string/clear"
+                    android:textSize="24sp" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/horizontal_divider"
+                    android:focusable="false" />
+
+                <Button
+                    android:id="@+id/btnCancelWeibo"
+                    style="@style/global_record_txt1"
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/list_item_down_bg"
+                    android:text="@string/cancel"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+</LinearLayout>
